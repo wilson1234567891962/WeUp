@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Opcional: Fuente similar a la de la imagen */
+@layer base {
+  body {
+    @apply bg-[#F8F9FC] antialiased text-slate-900;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
