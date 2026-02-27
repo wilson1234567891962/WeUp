@@ -25,6 +25,7 @@ function App() {
 
         {/* Manejo de 404 - opcional */}
         <Route path="*" element={<Navigate to="/login" replace />} />
+        
       </Routes>
     </Router>
   );
