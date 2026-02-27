@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/logo.svg";
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -10,7 +10,7 @@ const Register = () => {
         {/* Usando el logo de tu carpeta public */}
         <img
           className="mx-auto h-12 w-auto mb-4"
-          src="/logo.svg"
+          src={logo}
           alt="WeUp Logo"
         />
         <h2 className="text-center text-3xl font-extrabold text-[#2d00a8]">

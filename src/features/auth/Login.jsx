@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.svg";
 const LoginForm = () => {
   return (
     <div className="min-h-screen bg-[#F8F9FC] flex flex-col justify-center items-center p-6">
       {/* Logo WeUp */}
       <div className="mb-6">
         <img
-          src="/logo.svg" // Asegúrate de poner tu logo en public/
+          src={logo} 
           alt="WeUp Logo"
           className="w-20 h-20 object-contain"
         />

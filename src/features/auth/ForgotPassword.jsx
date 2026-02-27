@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import logo from "../../assets/logo.svg";
 const ForgotPassword = () => {
   return (
     <div className="min-h-screen bg-[#F8F9FC] flex flex-col justify-center items-center p-6 font-sans">
       {/* Logo WeUp */}
       <div className="mb-6">
         <img 
-          src="/logo.svg" 
+ src={logo}
           alt="WeUp Logo" 
           className="w-20 h-20 object-contain mx-auto"
         />
