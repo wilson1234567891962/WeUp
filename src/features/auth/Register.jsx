@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -23,10 +24,12 @@ const Register = () => {
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-2xl sm:px-10 border border-gray-100">
           <form className="space-y-5" action="#" method="POST">
-            
             {/* Nombre Completo */}
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Nombre completo
               </label>
               <input
@@ -41,7 +44,10 @@ const Register = () => {
 
             {/* Correo Electrónico */}
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Correo electrónico
               </label>
               <input
@@ -57,7 +63,10 @@ const Register = () => {
 
             {/* Contraseña */}
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Contraseña
               </label>
               <div className="relative">
@@ -76,9 +85,24 @@ const Register = () => {
                   onClick={() => setShowPassword(!showPassword)}
                 >
                   {/* Ícono de ojo para la contraseña */}
-                  <svg className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  <svg
+                    className="h-5 w-5 text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
                   </svg>
                 </button>
               </div>
@@ -86,7 +110,10 @@ const Register = () => {
 
             {/* Confirmar Contraseña */}
             <div>
-              <label htmlFor="confirm-password" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="confirm-password"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Confirmar contraseña
               </label>
               <input
@@ -111,15 +138,18 @@ const Register = () => {
             </div>
           </form>
         </div>
-        
+
         {/* Link a Iniciar Sesión */}
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
-            ¿Ya tienes una cuenta?{' '}
+            ¿Ya tienes una cuenta?{" "}
             {/* Si usas React Router, cambia la etiqueta <a> por <Link to="/login"> */}
-            <a href="/login" className="font-semibold text-[#2d00a8] hover:text-[#220080]">
+            <Link
+              to="/login"
+              className="font-semibold text-[#2d00a8] hover:text-[#220080]"
+            >
               Iniciar sesión
-            </a>
+            </Link>
           </p>
         </div>
       </div>
