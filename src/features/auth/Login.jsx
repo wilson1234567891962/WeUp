@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const LoginForm = () => {
   return (
     <div className="min-h-screen bg-[#F8F9FC] flex flex-col justify-center items-center p-6">
@@ -77,12 +77,13 @@ const LoginForm = () => {
               />
               Recordarme
             </label>
-            <a
-              href="#"
+            {/* AQUÍ ESTÁ EL CAMBIO PRINCIPAL */}
+            <Link
+              to="/forgot-password"
               className="text-[#2D26B5] font-semibold hover:underline"
             >
               ¿Olvidaste tu contraseña?
-            </a>
+            </Link>
           </div>
 
           {/* Botón Principal */}

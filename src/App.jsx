@@ -7,6 +7,7 @@ import {
 import Login from "./features/auth/Login";
 import Register from "./features/auth/Register";
 import Dashboard from "./layouts/Dashboard";
+import ForgotPassword from "./features/auth/ForgotPassword";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
 
         {/* Ruta para Crear Cuenta */}
         <Route path="/register" element={<Register />} />
